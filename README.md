@@ -31,19 +31,23 @@
 > npm install antd-mobile --save
 
 > 对于移动端viewport：
->
->   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+```shell
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+```
 
 > 对于移动端点击延迟0.3秒问题
->
-> <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
->     <script>
->       if ('addEventListener' in document) {
->         document.addEventListener('DOMContentLoaded', function() {
->           FastClick.attach(document.body);
->         }, false);
->       }
->       if(!window.Promise) {
->         document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
->       }
->     </script>
+
+```shell
+<script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+     <script>
+       if ('addEventListener' in document) {
+         document.addEventListener('DOMContentLoaded', function() {
+         FastClick.attach(document.body);
+         }, false);
+       }
+       if(!window.Promise) {
+         document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
+}
+   </script>
+```
